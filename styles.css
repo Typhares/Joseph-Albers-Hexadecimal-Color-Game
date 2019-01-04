@@ -28,6 +28,8 @@ spans {
 
 #banner {
     /* margin: auto; */
+    background-color: white;
+    height: 30px;
     text-align: center;
 }
 h1 {
