@@ -1,0 +1,35 @@
+body {
+    background-color: #F7F7F7;
+}      
+
+spans {
+    color: white;
+
+}
+#container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.square {
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+    /* display: inline-block; */
+    float: left;
+    margin: 1.6%;
+
+}
+
+.selected {
+
+    background: blue;
+    
+}
+
+#banner {
+    /* margin: auto; */
+    text-align: center;
+}
+h1 {
+    color: black;
+}
