@@ -9,15 +9,7 @@
 //         @@ pick 1 color
 //         @@ update
 //         @@ show the other 3 squares
-*    let colors = [
-//         "rgb(255, 0, 0)",
-//         "rgb(255, 255, 0)",
-//         "rgb(0, 255, 0)",
-//         "rgb(0, 255, 255)",
-//         "rgb(0, 0, 255)",
-//         "rgb(255, 0, 255)",
-        ]
-        */
+*/
 
 let colors = generateRandomColors(6);
 let squares = document.querySelectorAll(".square");
@@ -29,13 +21,16 @@ let hardBtn = document.querySelector("#hardBtn");
 let h1 = document.querySelector("h1");
 let resetButton = document.querySelector("#reset");
 
-resetButton.addEventListener("click", function(){
-    alert("Clicked");
-    //generate all new colors
+resetButton.addEventListener("click", function() {
     colors = generateRandomColors(6)
     // pick a new random color from array
     selectedColor = pickColor();
     colorDisplay.textContent = selectedColor;
+
+    for (i = 0; i < squares.length; i++) {
+        squares[i].style.background = colors[i];
+    }
+    h1.styles.background= "#233223";
 });
 
 easyBtn.addEventListener("click", function(){
@@ -51,22 +46,23 @@ hardBtn.addEventListener("click", function(){
 
 colorDisplay.textContent = selectedColor;
 
-    for ( i = 0; i < squares.length; i++ ) {
-        squares[i].style.background = colors[i];
-        squares[i].addEventListener('click', function(){
+for ( i = 0; i < squares.length; i++ ) {
+    squares[i].style.background = colors[i];
+    squares[i].addEventListener('click', function(){
         
-            let clickedColor = this.style.background;
-            // console.log(selectedColor, clickedColor);
-            if (clickedColor === selectedColor ) {
-            messageDisplay.textContent="correct"
-            changeColors(clickedColor);
-            h1.style.background = clickedColor;
-            } else {
+    let clickedColor = this.style.background;
+
+    if (clickedColor === selectedColor ) {
+        resetButton.textContent="play again";
+        messageDisplay.textContent="correct"
+        changeColors(clickedColor);
+        h1.style.background = clickedColor;
+    } else {
                 // alert('wrong!');
-            this.style.background = "#F7F7F7";
-            messageDisplay.textContent= "try again"
-            }
-        });
+        this.style.background = "#F7F7F7";
+        messageDisplay.textContent= "try again"
+        }
+    });
         // when user clicks on selected, change the background color from blue to white
 };
 

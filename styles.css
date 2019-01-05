@@ -1,15 +1,11 @@
 body {
-    background-color: #F7F7F7;
+    background-color: rgb(43, 42, 42), 217, 217);
 }      
 
-spans {
-    color: white;
+h1 {
+    color: black;
+}
 
-}
-#container {
-    max-width: 600px;
-    margin: 0 auto;
-}
 .square {
     width: 30%;
     background: purple;
@@ -26,12 +22,21 @@ spans {
     
 }
 
+#container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 #banner {
     /* margin: auto; */
-    background-color: white;
-    height: 30px;
+    background-color: gray;
+    height: 40px;
     text-align: center;
 }
-h1 {
-    color: black;
-}
+
+
+
+/* spans {
+    color: white;
+
+} */
