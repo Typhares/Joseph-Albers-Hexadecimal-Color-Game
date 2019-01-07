@@ -1,15 +1,3 @@
-/*    @@ click on easy button 
-//         @@ generates 3 new colored squares fr the color arr
-//         @@ pick 1 color
-//         @@ update
-//         @@ hide the other 3 squares
-*/
-/*    @@ click on hard button 
-//         @@ generates 6 new colored squares fr the color arr
-//         @@ pick 1 color
-//         @@ update
-//         @@ show the other 3 squares
-*/
 let numOfSquares = 6;
 let colors = generateRandomColors(numOfSquares);
 let squares = document.querySelectorAll(".square");
@@ -21,32 +9,45 @@ let hardBtn = document.querySelector("#hardBtn");
 let h1 = document.querySelector("h1");
 let resetButton = document.querySelector("#reset");
 
+easyBtn.addEventListener("click", function() {
+    easyBtn.classList.add("selected");
+    hardBtn.classList.remove("selected");
+    numOfSquares = 3;
+    colors = generateRandomColors(numOfSquares);
+    selectedColor = pickColor();
+    colorDisplay.textContent = selectedColor;
+    for(var i = 0; i < squares.length; i++) {
+		if(colors[i]) {
+			squares[i].style.background = colors[i];
+		} else {
+			squares[i].style.display = "none";
+		}
+	}
+});
+
+
+hardBtn.addEventListener("click", function(){
+    hardBtn.classList.add("selected");
+    easyBtn.classList.remove("selected");
+    numOfSquares = 6;
+    colors = generateRandomColors(numOfSquares);
+    selectedColor = pickColor();
+    colorDisplay.textContent = selectedColor;
+    for ( let i = 0; i < squares.length; i++) {
+        squares[i].style.background(colors[i]);
+        squares[i].style.display = "block";
+    }
+});
 
 resetButton.addEventListener("click", function() {
     colors = generateRandomColors(6)
     // pick a new random color from array
     selectedColor = pickColor();
     colorDisplay.textContent = selectedColor;
-
     for (i = 0; i < squares.length; i++) {
         squares[i].style.background = colors[i];
     }
-    h1.style.background = "#233223";
-});
-
-easyBtn.addEventListener("click", function(){
-    hardBtn.classList.remove("selected");
-    easyBtn.classList.add("selected");
-    colors = generateRandomColors(3);
-    selectedColor = pickColor();
-    colorDisplay.textContent = selectedColor;
-    // add logic for hard button with if else 
-});
-
-hardBtn.addEventListener("click", function(){
-    hardBtn.classList.add("selected");
-    easyBtn.classList.remove("selected");
-    colors = generateRandomColors(6);
+    h1.style.background = "white";
 });
 
 colorDisplay.textContent = selectedColor;
