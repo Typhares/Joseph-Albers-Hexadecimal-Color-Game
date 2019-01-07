@@ -1,3 +1,18 @@
+/*    @@ click on easy button 
+//         @@ generates 3 new colored squares fr the color arr
+//         @@ pick 1 color
+//         @@ update
+//         @@ hide the other 3 squares
+*/
+/*    @@ click on hard button 
+//         @@ generates 6 new colored squares fr the color arr
+//         @@ pick 1 color
+//         @@ update
+//         @@ show the other 3 squares
+*/
+
+
+
 let numOfSquares = 6;
 let colors = generateRandomColors(numOfSquares);
 let squares = document.querySelectorAll(".square");
@@ -25,7 +40,6 @@ easyBtn.addEventListener("click", function() {
 	}
 });
 
-
 hardBtn.addEventListener("click", function(){
     hardBtn.classList.add("selected");
     easyBtn.classList.remove("selected");
@@ -34,20 +48,20 @@ hardBtn.addEventListener("click", function(){
     selectedColor = pickColor();
     colorDisplay.textContent = selectedColor;
     for ( let i = 0; i < squares.length; i++) {
-        squares[i].style.background(colors[i]);
+        squares[i].style.background = colors[i];
         squares[i].style.display = "block";
     }
 });
 
 resetButton.addEventListener("click", function() {
     colors = generateRandomColors(6)
-    // pick a new random color from array
     selectedColor = pickColor();
     colorDisplay.textContent = selectedColor;
     for (i = 0; i < squares.length; i++) {
         squares[i].style.background = colors[i];
     }
     h1.style.background = "white";
+    this.style.background = "black";
 });
 
 colorDisplay.textContent = selectedColor;
@@ -65,11 +79,11 @@ for ( i = 0; i < squares.length; i++ ) {
         h1.style.background = clickedColor;
     } else {
                 // alert('wrong!');
-        this.style.background = "#F7F7F7";
+        this.style.background = "#34495E";
         messageDisplay.textContent= "try again"
         }
     });
-        // when user clicks on selected, change the background color from blue to white
+     
 };
 
 function changeColors(color) {

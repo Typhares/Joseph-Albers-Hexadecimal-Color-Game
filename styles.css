@@ -1,14 +1,38 @@
 body {
-    background-color: rgb(43, 42, 42), 217, 217);
+    /* background-color: rgb(43, 42, 42), 217, 217); */
+    margin: 0;
+    font-family: "Avenir", "Montserrat";
+    
 }      
 
 h1 {
-    color: black;
+    /* color: black; */
+    text-align: center;
+    line-height: 1.1;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 20px 0px;
 }
 
+button {
+    border: none;
+    background: black;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    font-size: inherit;
+    color: white;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
 .square {
     width: 30%;
-    background: purple;
+    /* background: purple; */
     padding-bottom: 30%;
     /* display: inline-block; */
     float: left;
@@ -17,8 +41,8 @@ h1 {
 }
 
 .selected {
-
-    background: orange;
+    color: white;
+    background: black;
     
 }
 
@@ -29,14 +53,18 @@ h1 {
 
 #banner {
     /* margin: auto; */
-    background-color: gray;
+    background-color: white;
     height: 40px;
     text-align: center;
+    padding: 20px;
 }
 
+#message {
+    display: inline-block;
+    width: 30%;
+}
 
+#colorDisplay {
+    font-size: 150%;
+}
 
-/* spans {
-    color: white;
-
-} */
