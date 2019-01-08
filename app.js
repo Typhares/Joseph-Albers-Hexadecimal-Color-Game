@@ -12,7 +12,6 @@
 */
 
 
-
 let numOfSquares = 6;
 let colors = generateRandomColors(numOfSquares);
 let squares = document.querySelectorAll(".square");
@@ -72,14 +71,14 @@ for ( i = 0; i < squares.length; i++ ) {
         
     let clickedColor = this.style.background;
 
-    if (clickedColor === selectedColor ) {
+    if (clickedColor === selectedColor) {
         resetButton.textContent="play again";
         messageDisplay.textContent="correct"
         changeColors(clickedColor);
         h1.style.background = clickedColor;
     } else {
                 // alert('wrong!');
-        this.style.background = "#34495E";
+        this.style.background = "white";
         messageDisplay.textContent= "try again"
         }
     });
