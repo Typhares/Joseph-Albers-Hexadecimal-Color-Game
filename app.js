@@ -12,7 +12,6 @@
     *show the other 3 squares
 */
 
-
 let numOfSquares = 6;
 let colors = generateRandomColors(numOfSquares);
 let squares = document.querySelectorAll(".square");
