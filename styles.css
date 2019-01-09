@@ -18,13 +18,14 @@ h1 {
 } */
 
 button {
+    outline: none;
     border: none;
-    background: black;
+    background:none;
     text-transform: uppercase;
     height: 100%;
     font-weight: 700;
     font-size: inherit;
-    color: white;
+    color:black;
     letter-spacing: 1px;
 }
 
