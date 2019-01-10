@@ -28,7 +28,8 @@ h1 {
     text-transform: uppercase;
     padding: 20px 0px;
     color: white;
-    background: steelblue;
+    background: black;
+   
 }
 
 #colorDisplay {
@@ -53,7 +54,7 @@ h1 {
 
 .selected {
     color: white;
-    background: steelblue;
+    background: black;
     
 }
 
@@ -64,22 +65,12 @@ button {
     font-weight: 700;
     font-size: inherit;
     letter-spacing: 1.5px;
-    color: steelblue;
+    color: black;
     background: none;
 
 }
 
 button:hover {
     color: white;
-    background-color:steelblue;
+    background-color:black;
 }
-/* #reset button {
-    background: black;
-    border: none;
-} */
-
-/* button, #reset  {
-    background: pink;
-    color: black;
-    border: none;
-} */
