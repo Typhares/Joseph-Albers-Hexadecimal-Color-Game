@@ -59,6 +59,7 @@ h1 {
 }
 
 button {
+    outline: none;
     border: none;
     text-transform: uppercase;
     height: 100%;
