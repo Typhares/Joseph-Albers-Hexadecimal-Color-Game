@@ -24,15 +24,6 @@ let hardBtn = document.querySelector("#hardBtn");
 let h1 = document.querySelector("h1");
 let resetButton = document.querySelector("#reset");
 
-/* for loop makes game scalable 
-*/
-// for ( let i=0; i < toggleBtns.length; i++) {
-//     toggleBtns[i].addEventListener("click", function(){
-//     toggleBtns[0].classList.remove("selected");
-//     toggleBtns[1].classList.remove("selected");
-//     this.classList.add("selected");
-//     });
-// }
 easyBtn.addEventListener("click", function() {
     hardBtn.classList.remove("selected");
     easyBtn.classList.add("selected");

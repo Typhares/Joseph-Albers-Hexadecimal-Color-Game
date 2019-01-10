@@ -2,37 +2,6 @@ body {
     margin: 0;
     font-family: "Avenir", "Montserrat";    
 }      
-
-h1 {
-    /* color: black; */
-    text-align: center;
-    line-height: 1.1;
-    margin: 0;
-    font-weight: normal;
-    text-transform: uppercase;
-    padding: 20px 0px;
-}
-
-/* #reset button {
-    background: black;
-} */
-
-button {
-    outline: none;
-    border: none;
-    background:none;
-    text-transform: uppercase;
-    height: 100%;
-    font-weight: 700;
-    font-size: inherit;
-    color:black;
-    letter-spacing: 1px;
-}
-
-button:hover {
-    background-color: black;
-    color: white;
-}
 .square {
     width: 30%;
     padding-bottom: 30%;
@@ -44,24 +13,25 @@ button:hover {
     --moz-transition: background 0.3s;
 }
 
-.selected {
-    color: white;
-    background: black;
-    
-}
 
 #container {
     max-width: 600px;
     margin: 0 auto;
 }
 
-
-#banner {
-    /* margin: auto; */
-    background-color: white;
-    height: 40px;
+h1 {
+    /* color: black; */
     text-align: center;
-    padding: 20px;
+    line-height: 1.1;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 20px 0px;
+
+}
+
+#colorDisplay {
+    font-size: 150%;
 }
 
 #message {
@@ -70,7 +40,47 @@ button:hover {
     
 }
 
-#colorDisplay {
-    font-size: 150%;
+/* #reset button {
+    background: black;
+    border: none;
+} */
+
+button, #reset  {
+    background: white;
+    color: black;
+    border: none;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    font-size: inherit;
+    color:black;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
+#banner {
+    /* margin: auto; */
+    background: white;
+    color: black;
+    height: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.selected {
+    color: white;
+    background: black;
+    
 }
 
