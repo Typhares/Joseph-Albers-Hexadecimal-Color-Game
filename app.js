@@ -25,8 +25,8 @@ let h1 = document.querySelector("h1");
 let resetButton = document.querySelector("#reset");
 
 easyBtn.addEventListener("click", function() {
-    hardBtn.classList.remove("selected");
     easyBtn.classList.add("selected");
+    hardBtn.classList.remove("selected");
     numOfSquares = 3;
     colors = generateRandomColors(numOfSquares);
     selectedColor = pickColor();
@@ -68,9 +68,8 @@ resetButton.addEventListener("click", function() {
     for (i = 0; i < squares.length; i++) {
         squares[i].style.backgroundColor = colors[i];
     }
-    h1.style.backgroundColor = "white";
-    // this.style.backgroundColor = "black";
-    this.style.backgroundColor = "white";
+    h1.style.backgroundColor = "steelblue";
+    // this.style.backgroundColor = "white";
 });
 
 colorDisplay.textContent = selectedColor;

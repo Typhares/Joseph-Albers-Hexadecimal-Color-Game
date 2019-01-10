@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: "Avenir", "Montserrat";    
 }      
+
 .square {
     width: 30%;
     padding-bottom: 30%;
@@ -20,14 +21,14 @@ body {
 }
 
 h1 {
-    /* color: black; */
     text-align: center;
     line-height: 1.1;
     margin: 0;
     font-weight: normal;
     text-transform: uppercase;
     padding: 20px 0px;
-
+    color: white;
+    background: steelblue;
 }
 
 #colorDisplay {
@@ -37,50 +38,48 @@ h1 {
 #message {
     display: inline-block;
     width: 30%;
+    font-weight: 700;
+    text-transform: uppercase;
     
 }
 
+#banner {
+    height: 40px;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    color: black;
+}
+
+.selected {
+    color: white;
+    background: steelblue;
+    
+}
+
+button {
+    border: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    font-size: inherit;
+    letter-spacing: 1.5px;
+    color: steelblue;
+    background: none;
+
+}
+
+button:hover {
+    color: white;
+    background-color:steelblue;
+}
 /* #reset button {
     background: black;
     border: none;
 } */
 
-button, #reset  {
-    background: white;
+/* button, #reset  {
+    background: pink;
     color: black;
     border: none;
-}
-
-button {
-    border: none;
-    background: none;
-    text-transform: uppercase;
-    height: 100%;
-    font-weight: 700;
-    font-size: inherit;
-    color:black;
-    letter-spacing: 1px;
-}
-
-button:hover {
-    color: white;
-    background-color: black;
-}
-
-
-
-#banner {
-    /* margin: auto; */
-    background: white;
-    color: black;
-    height: 40px;
-    text-align: center;
-    padding: 20px;
-}
-
-.selected {
-    color: white;
-    background: black;
-    
-}
-
+} */
